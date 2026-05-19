@@ -1,19 +1,22 @@
 # NAINY MEHRA — AI PM Builder Portfolio
 
-> AI Product Manager | Maven AI PM Certification | Builder of conversational, search, and agentic AI systems
-
----
-
 ## About
 
-I am an AI-native Product Manager with hands-on experience building and shipping AI products across conversational interfaces, personalization, and search. This portfolio documents real project work — from prompt design to multi-agent orchestration — built to demonstrate both product thinking and technical execution.
+I am an AI-native Product Manager with hands-on experience building and shipping AI products across conversational interfaces, personalization, and search. This portfolio documents real project work from prompt design to multi-agent orchestration. Built to demonstrate both product sense and technical execution.
 
 **Background:**
 - COO & Co-founder, AgenticDating (AI-native dating agent, live at agenticdating.lovable.app)
-- AI Product Management Certification — Maven (Instructors: Rohan Varma, OpenAI · Henry Shi, Anthropic)
-- 8+ years building AI-powered consumer products
+- 8+ years building AI-powered B2B & B2C products
 
 ---
+
+##Product Philosophy
+I believe strong product leadership comes from:
+* User empathy
+* Product Sense
+* Data-driven decision-making
+* Cross-functional collaboration
+* Rapid experimentation and iteration
 
 ## Projects
 
@@ -140,4 +143,4 @@ Weekly notes on what I built, what surprised me, and what I'd do differently —
 
 ---
 
-*Built as part of the Maven AI Product Management Certification — May 2026*
+
