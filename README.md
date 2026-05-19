@@ -1,22 +1,24 @@
-# NAINY MEHRA — AI PM Builder Portfolio
+# NAINY MEHRA — AI-native PM Portfolio
+
 
 ## About
 
-I am an AI-native Product Manager with hands-on experience building and shipping AI products across conversational interfaces, personalization, and search. This portfolio documents real project work from prompt design to multi-agent orchestration. Built to demonstrate both product sense and technical execution.
+An AI-native Product Manager with hands-on experience building and scaling AI-powered products across conversational AI, personalization, and AI-powered search. This portfolio showcases end-to-end AI product work across prompt design, Vibe code, LLM workflows, RAG systems, evaluation frameworks, multi-agent orchestration, guardrails, trade-offs, and success metrics. Demonstrate strong product sense and technical execution from identifying ambiguous user problems to defining AI success metrics and shipping measurable product outcomes.
 
-**Background:**
-- COO & Co-founder, AgenticDating (AI-native dating agent, live at agenticdating.lovable.app)
-- 8+ years building AI-powered B2B & B2C products
-
----
-
-##Product Philosophy
+## Product Philosophy
 I believe strong product leadership comes from:
 * User empathy
 * Product Sense
 * Data-driven decision-making
 * Cross-functional collaboration
 * Rapid experimentation and iteration
+  
+**Background:**
+- COO & Co-founder, AgenticDating (AI-native dating agent, live at agenticdating.lovable.app)
+- 8+ years building AI-powered B2B & B2C products
+
+---
+
 
 ## Projects
 
@@ -30,7 +32,7 @@ I believe strong product leadership comes from:
 
 ---
 
-## 01 — Conversational Support Bot
+## 01 — AI Conversational Bot
 
 **Folder:** `01-conversational-bot/`
 
@@ -58,7 +60,7 @@ Semantic search over a product catalog using embeddings. Side-by-side comparison
 - RAG layer design doc
 - Working Python notebook
 
-**Resume bullet:** Built AI-powered search using embeddings and RAG, demonstrating clear uplift over keyword-based retrieval
+**Resume bullet:** Built an AI-powered semantic search experience using embeddings and RAG, improving relevance, context retrieval, and user discovery compared to traditional keyword-based search. Addressed lexical dependency and poor semantic understanding inherent in traditional keyword-based retrieval systems.
 
 ---
 
