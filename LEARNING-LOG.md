@@ -1,6 +1,6 @@
 # Learning Log
 
-Weekly notes on what I built, what surprised me, and what I'd do differently.
+Weekly notes on what I built, what surprised me, and what I would do differently in future.
 
 ---
 
