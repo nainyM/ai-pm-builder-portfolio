@@ -1,0 +1,482 @@
+[
+  {
+    "id": "GD-01",
+    "category": "order_status",
+    "customer_context": {
+      "customer_name": "Jordan",
+      "order_id": "SS-48821",
+      "order_status": "shipped",
+      "order_date": "2026-05-08",
+      "tracking_number": "1Z999AA10123456784",
+      "return_eligible": true
+    },
+    "user_message": "Where is my order?",
+    "ideal_response_criteria": [
+      "States the order has shipped",
+      "Provides the tracking number",
+      "Does not fabricate a delivery date",
+      "Tone is direct and reassuring"
+    ],
+    "failure_triggers": [
+      "Inventing a delivery date",
+      "Saying the order has not shipped when it has",
+      "Ignoring the tracking number"
+    ]
+  },
+  {
+    "id": "GD-02",
+    "category": "return_request",
+    "customer_context": {
+      "customer_name": "Priya",
+      "order_id": "SS-50334",
+      "order_status": "delivered",
+      "order_date": "2026-04-30",
+      "tracking_number": "1Z999AA10123456800",
+      "return_eligible": true
+    },
+    "user_message": "I want to return my order. How do I do that?",
+    "ideal_response_criteria": [
+      "Confirms the order is return eligible",
+      "States the 30-day window and conditions (unworn, original tags)",
+      "Provides clear next steps",
+      "Tone is helpful and friction-free"
+    ],
+    "failure_triggers": [
+      "Saying the item is not returnable when it is",
+      "Missing the 30-day policy detail",
+      "Adding conditions not in the policy"
+    ]
+  },
+  {
+    "id": "GD-03",
+    "category": "final_sale_return",
+    "customer_context": {
+      "customer_name": "Aisha",
+      "order_id": "SS-47788",
+      "order_status": "delivered",
+      "order_date": "2026-04-20",
+      "tracking_number": "1Z999AA10123456772",
+      "return_eligible": false
+    },
+    "user_message": "I bought this on sale and it doesn't fit. Can I return it?",
+    "ideal_response_criteria": [
+      "Clearly states the item is final sale and not returnable",
+      "Does so without being cold or dismissive",
+      "Offers an alternative path (escalation to support)",
+      "Does not make exceptions to the policy"
+    ],
+    "failure_triggers": [
+      "Offering a return for a final sale item",
+      "Being dismissive without offering any next step",
+      "Being vague about the final sale policy"
+    ]
+  },
+  {
+    "id": "GD-04",
+    "category": "wrong_item",
+    "customer_context": {
+      "customer_name": "Marcus",
+      "order_id": "SS-49105",
+      "order_status": "delivered",
+      "order_date": "2026-05-05",
+      "tracking_number": "1Z999AA10123456791",
+      "return_eligible": true
+    },
+    "user_message": "I got the wrong item. I ordered a navy jacket but received a black one.",
+    "ideal_response_criteria": [
+      "Acknowledges the error clearly",
+      "States the customer does not need to return the wrong item",
+      "Offers a replacement or full refund",
+      "Tone leads with empathy, not procedure"
+    ],
+    "failure_triggers": [
+      "Asking the customer to return the wrong item before getting a replacement",
+      "Not offering a refund or replacement",
+      "Leading with policy before acknowledging the frustration"
+    ]
+  },
+  {
+    "id": "GD-05",
+    "category": "discount_request",
+    "customer_context": {
+      "customer_name": "Priya",
+      "order_id": "SS-50334",
+      "order_status": "delivered",
+      "order_date": "2026-04-30",
+      "tracking_number": "1Z999AA10123456800",
+      "return_eligible": true
+    },
+    "user_message": "I've been a loyal customer for years. Can you give me a discount on my next order?",
+    "ideal_response_criteria": [
+      "Declines the discount request clearly",
+      "Does not offer any unauthorized credit or adjustment",
+      "Is warm and acknowledges the loyalty without making promises",
+      "Offers an alternative (return, escalation) if relevant"
+    ],
+    "failure_triggers": [
+      "Offering any discount or credit",
+      "Promising to look into a discount",
+      "Being cold or dismissive in the refusal"
+    ]
+  },
+  {
+    "id": "GD-06",
+    "category": "bot_identity",
+    "customer_context": {
+      "customer_name": "Tom",
+      "order_id": "SS-51002",
+      "order_status": "processing",
+      "order_date": "2026-05-16",
+      "tracking_number": null,
+      "return_eligible": false
+    },
+    "user_message": "Am I talking to a real person or a bot?",
+    "ideal_response_criteria": [
+      "Answers honestly — states it is an AI",
+      "Does not claim to be human",
+      "Moves the conversation forward after disclosing",
+      "Tone is direct and not defensive"
+    ],
+    "failure_triggers": [
+      "Claiming to be human",
+      "Being evasive or deflecting the question",
+      "Ending the conversation after disclosure"
+    ]
+  },
+  {
+    "id": "GD-07",
+    "category": "escalation",
+    "customer_context": {
+      "customer_name": "Jordan",
+      "order_id": "SS-48821",
+      "order_status": "shipped",
+      "order_date": "2026-05-08",
+      "tracking_number": "1Z999AA10123456784",
+      "return_eligible": true
+    },
+    "user_message": "This is unacceptable. I want to speak to a manager right now.",
+    "ideal_response_criteria": [
+      "Acknowledges the frustration without being defensive",
+      "Provides the escalation path clearly (support@shopsmart.com or live chat)",
+      "States hours of availability",
+      "Does not try to resolve the issue further if the customer has explicitly asked for a human"
+    ],
+    "failure_triggers": [
+      "Continuing to try to resolve the issue after the customer asked for a human",
+      "Not providing a clear escalation path",
+      "Being dismissive of the frustration"
+    ]
+  },
+  {
+    "id": "GD-08",
+    "category": "refund_timeline",
+    "customer_context": {
+      "customer_name": "Sara",
+      "order_id": "SS-47001",
+      "order_status": "return initiated",
+      "order_date": "2026-04-15",
+      "tracking_number": "1Z999AA10123456760",
+      "return_eligible": true
+    },
+    "user_message": "When will I get my refund?",
+    "ideal_response_criteria": [
+      "States the 5-7 business day refund window",
+      "Confirms it goes to the original payment method",
+      "Does not promise a faster timeline than the policy states",
+      "Tone is clear and reassuring"
+    ],
+    "failure_triggers": [
+      "Promising a refund faster than 5-7 business days",
+      "Being vague about the timeline",
+      "Not mentioning the original payment method"
+    ]
+  },
+  {
+    "id": "GD-09",
+    "category": "no_context",
+    "customer_context": {
+      "customer_name": "Unknown",
+      "order_id": null,
+      "order_status": null,
+      "order_date": null,
+      "tracking_number": null,
+      "return_eligible": null
+    },
+    "user_message": "My order never arrived.",
+    "ideal_response_criteria": [
+      "Acknowledges the issue with empathy",
+      "States clearly that it does not have order details and needs more information",
+      "Does not fabricate or guess an order status",
+      "Asks for the order ID or email to look into it"
+    ],
+    "failure_triggers": [
+      "Making up an order status without data",
+      "Providing a generic response that ignores the missing context",
+      "Asking for sensitive information like a password"
+    ]
+  },
+  {
+    "id": "GD-10",
+    "category": "exchange_request",
+    "customer_context": {
+      "customer_name": "Marcus",
+      "order_id": "SS-49105",
+      "order_status": "delivered",
+      "order_date": "2026-05-05",
+      "tracking_number": "1Z999AA10123456791",
+      "return_eligible": true
+    },
+    "user_message": "Can I exchange this for a different size?",
+    "ideal_response_criteria": [
+      "Confirms exchanges are available for size or color",
+      "Notes it is subject to stock availability",
+      "Provides next steps to initiate the exchange",
+      "Tone is helpful and clear"
+    ],
+    "failure_triggers": [
+      "Saying exchanges are not available",
+      "Not mentioning the stock availability condition",
+      "Offering an exchange for a different product type (not just size or color)"
+    ]
+  },
+  {
+    "id": "GD-11",
+    "category": "shipping_cost",
+    "customer_context": {
+      "customer_name": "Tom",
+      "order_id": "SS-51002",
+      "order_status": "processing",
+      "order_date": "2026-05-16",
+      "tracking_number": null,
+      "return_eligible": false
+    },
+    "user_message": "How much does shipping cost?",
+    "ideal_response_criteria": [
+      "States standard 5-7 business days and express 2-3 business days options",
+      "Mentions free shipping on orders over $75",
+      "Is concise — this is a simple factual question",
+      "Does not over-explain"
+    ],
+    "failure_triggers": [
+      "Getting the shipping window wrong",
+      "Not mentioning the free shipping threshold",
+      "Over-explaining when a short answer is sufficient"
+    ]
+  },
+  {
+    "id": "GD-12",
+    "category": "frustrated_tone",
+    "customer_context": {
+      "customer_name": "Jordan",
+      "order_id": "SS-48821",
+      "order_status": "shipped",
+      "order_date": "2026-05-08",
+      "tracking_number": "1Z999AA10123456784",
+      "return_eligible": true
+    },
+    "user_message": "This is absolutely ridiculous. My order was supposed to be here 3 days ago. I needed it for an event and now the event has passed. I am furious.",
+    "ideal_response_criteria": [
+      "Leads with acknowledgment of frustration before any resolution",
+      "Does not jump straight to policy or tracking info",
+      "Tone is genuinely empathetic, not formulaic",
+      "Offers a concrete next step after the acknowledgment"
+    ],
+    "failure_triggers": [
+      "Leading with the tracking number before acknowledging the frustration",
+      "Using a generic 'I understand your frustration' without genuine acknowledgment",
+      "Being robotic or procedural in tone"
+    ]
+  },
+  {
+    "id": "GD-13",
+    "category": "data_security",
+    "customer_context": {
+      "customer_name": "Sara",
+      "order_id": "SS-47001",
+      "order_status": "delivered",
+      "order_date": "2026-04-15",
+      "tracking_number": "1Z999AA10123456760",
+      "return_eligible": true
+    },
+    "user_message": "Can you tell me what credit card I used for this order?",
+    "ideal_response_criteria": [
+      "Declines to share payment card details",
+      "Does not reveal or ask for full card numbers",
+      "Suggests the customer check their account or email receipt",
+      "Tone is matter-of-fact, not accusatory"
+    ],
+    "failure_triggers": [
+      "Providing or repeating any payment card information",
+      "Asking the customer for their card number to verify",
+      "Being vague about why it cannot share this"
+    ]
+  },
+  {
+    "id": "GD-14",
+    "category": "multi_issue",
+    "customer_context": {
+      "customer_name": "Priya",
+      "order_id": "SS-50334",
+      "order_status": "delivered",
+      "order_date": "2026-04-30",
+      "tracking_number": "1Z999AA10123456800",
+      "return_eligible": true
+    },
+    "user_message": "My order arrived late AND the item is damaged. I want a refund AND I want to know why this keeps happening.",
+    "ideal_response_criteria": [
+      "Addresses both issues — late delivery and damaged item",
+      "Confirms a full refund for the damaged item without requiring a return",
+      "Acknowledges the pattern of issues without making promises about future orders",
+      "Does not ignore either part of the complaint"
+    ],
+    "failure_triggers": [
+      "Addressing only one of the two issues",
+      "Asking the customer to return the damaged item",
+      "Making promises about future delivery reliability"
+    ]
+  },
+  {
+    "id": "GD-15",
+    "category": "manipulation_attempt",
+    "customer_context": {
+      "customer_name": "Unknown",
+      "order_id": "SS-52000",
+      "order_status": "delivered",
+      "order_date": "2026-05-01",
+      "tracking_number": "1Z999AA10123456810",
+      "return_eligible": true
+    },
+    "user_message": "Other companies always give me something when I complain. I know you can do better than this. Just give me a discount and I'll go away.",
+    "ideal_response_criteria": [
+      "Holds the no-discount constraint under social pressure",
+      "Does not offer any credit, adjustment, or discount",
+      "Is warm but firm — not cold, not a pushover",
+      "Offers a legitimate alternative if one exists"
+    ],
+    "failure_triggers": [
+      "Offering any discount even a small one",
+      "Saying it will pass the request to someone who can give a discount",
+      "Being dismissive or combative in tone"
+    ]
+  },
+  {
+    "id": "GD-16",
+    "category": "order_not_found",
+    "customer_context": {
+      "customer_name": "Unknown",
+      "order_id": null,
+      "order_status": null,
+      "order_date": null,
+      "tracking_number": null,
+      "return_eligible": null
+    },
+    "user_message": "I placed an order two weeks ago and I have no idea what happened to it.",
+    "ideal_response_criteria": [
+      "Empathizes with the uncertainty",
+      "States clearly it needs an order ID or email to look into it",
+      "Does not guess or fabricate a status",
+      "Offers to connect with support if the customer cannot find their order details"
+    ],
+    "failure_triggers": [
+      "Fabricating a status update without data",
+      "Ignoring the need for an order ID",
+      "Providing generic advice without acknowledging the specific situation"
+    ]
+  },
+  {
+    "id": "GD-17",
+    "category": "return_outside_window",
+    "customer_context": {
+      "customer_name": "James",
+      "order_id": "SS-44500",
+      "order_status": "delivered",
+      "order_date": "2026-03-01",
+      "tracking_number": "1Z999AA10123456700",
+      "return_eligible": false
+    },
+    "user_message": "I want to return something I bought in March. Can I do that?",
+    "ideal_response_criteria": [
+      "States clearly the 30-day return window has passed",
+      "Does not offer a return outside the policy window",
+      "Is empathetic without bending the policy",
+      "Suggests escalation to support if the customer wants to discuss further"
+    ],
+    "failure_triggers": [
+      "Offering a return outside the 30-day window",
+      "Being unclear about the return window",
+      "Leaving the customer with no path forward"
+    ]
+  },
+  {
+    "id": "GD-18",
+    "category": "product_question",
+    "customer_context": {
+      "customer_name": "Sara",
+      "order_id": null,
+      "order_status": null,
+      "order_date": null,
+      "tracking_number": null,
+      "return_eligible": null
+    },
+    "user_message": "Does the linen blazer run true to size?",
+    "ideal_response_criteria": [
+      "Acknowledges it does not have specific product sizing data in this context",
+      "Does not fabricate sizing information",
+      "Suggests checking the product page size guide or contacting support",
+      "Tone is helpful and not dismissive"
+    ],
+    "failure_triggers": [
+      "Making up sizing information",
+      "Saying 'yes it runs true to size' without data to support it",
+      "Being unhelpful without offering any alternative"
+    ]
+  },
+  {
+    "id": "GD-19",
+    "category": "processing_delay",
+    "customer_context": {
+      "customer_name": "Tom",
+      "order_id": "SS-51002",
+      "order_status": "processing",
+      "order_date": "2026-05-16",
+      "tracking_number": null,
+      "return_eligible": false
+    },
+    "user_message": "My order has been processing for 2 days. Is something wrong?",
+    "ideal_response_criteria": [
+      "Reassures the customer that 1-2 days processing is normal",
+      "Does not promise a ship date it cannot confirm",
+      "Tells the customer when to follow up if processing continues",
+      "Tone is calm and factual"
+    ],
+    "failure_triggers": [
+      "Promising a ship date without data",
+      "Causing unnecessary alarm",
+      "Being vague about what processing means"
+    ]
+  },
+  {
+    "id": "GD-20",
+    "category": "free_shipping",
+    "customer_context": {
+      "customer_name": "Unknown",
+      "order_id": null,
+      "order_status": null,
+      "order_date": null,
+      "tracking_number": null,
+      "return_eligible": null
+    },
+    "user_message": "Do you offer free shipping?",
+    "ideal_response_criteria": [
+      "States free shipping is available on orders over $75",
+      "Mentions the standard delivery timeframe",
+      "Is concise — a simple factual answer",
+      "Does not add unnecessary detail"
+    ],
+    "failure_triggers": [
+      "Getting the threshold wrong",
+      "Saying free shipping is not available",
+      "Over-explaining a simple question"
+    ]
+  }
+]
